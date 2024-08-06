@@ -1,0 +1,12 @@
+/* .main{
+    background-color: white;
+    color: black;
+} */
+
+.pwdisp{
+    height: 35px;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 5px 15px;
+    border: 1px solid white;
+}
