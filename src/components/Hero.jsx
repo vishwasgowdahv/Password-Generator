@@ -53,38 +53,46 @@ export default function Hero() {
             type="text"
             readOnly
           />
-          <button onClick={handleCopy}>copy</button>
+          <button className={styles.copybtn} onClick={handleCopy}>
+            copy
+          </button>
         </div>
         <div>
-          <input
-            id="length"
-            min={8}
-            max={30}
-            onChange={(e) => {
-              setLength(e.target.value);
-            }}
-            value={length}
-            type="range"
-          />
-          <label htmlFor="length">Length (8)</label>
+          <div className={styles.lengthdiv}>
+            <label htmlFor="length">Length ({length})</label>
+            <input
+              id="length"
+              min={8}
+              max={30}
+              onChange={(e) => {
+                setLength(e.target.value);
+              }}
+              value={length}
+              type="range"
+            />
+          </div>
 
-          <input
-            onClick={() => {
-              userNmuber ? setUserNumber(false) : setUserNumber(true);
-            }}
-            id="number"
-            type="checkbox"
-          />
-          <label htmlFor="number">number</label>
+          <div className={styles.checkboxdiv}>
+            <label htmlFor="number">number</label>
+            <input
+              className={styles.checkbox}
+              onClick={() => {
+                userNmuber ? setUserNumber(false) : setUserNumber(true);
+              }}
+              id="number"
+              type="checkbox"
+            />
 
-          <input
-            onClick={() => {
-              spChar ? setSpChar(false) : setSpChar(true);
-            }}
-            id="char"
-            type="checkbox"
-          />
-          <label htmlFor="char">char</label>
+            <label htmlFor="char">char</label>
+            <input
+              className={styles.checkbox}
+              onClick={() => {
+                spChar ? setSpChar(false) : setSpChar(true);
+              }}
+              id="char"
+              type="checkbox"
+            />
+          </div>
         </div>
       </div>
     </>
