@@ -13,7 +13,7 @@ export default function Hero() {
   function passwordGenerte() {
     let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     let nums = "12345678901234567890";
-    let chars = "!@#$%^&*?!@#$%^";
+    let chars = "!@#$&!@#$#$&@#$&@;
     if (userNmuber) {
       letters += nums;
     }
