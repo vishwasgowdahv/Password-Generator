@@ -53,10 +53,12 @@ export default function Hero() {
             type="text"
             readOnly
           />
+           {/* copy button code  */}
           <button className={styles.copybtn} onClick={handleCopy}>
             copy
           </button>
         </div>
+        {/* input for password length */}
         <div>
           <div className={styles.lengthdiv}>
             <label htmlFor="length">Length ({length})</label>
@@ -71,7 +73,7 @@ export default function Hero() {
               type="range"
             />
           </div>
-
+						{/* input for Numbers in password */}
           <div className={styles.checkboxdiv}>
             <label htmlFor="number">number</label>
             <input
@@ -82,7 +84,7 @@ export default function Hero() {
               id="number"
               type="checkbox"
             />
-
+						{/* input for Special Charecters in password */}
             <label htmlFor="char">char</label>
             <input
               className={styles.checkbox}
